@@ -156,7 +156,7 @@ class Honeypot:
                 bind_host,
                 port,
                 ssl=ssl_context)
-          elif cap_name == 'ssh':
+          elif cap_name.startswith('ssh'):
             # Since dicts and user-defined classes are mutable, we have
             # to save ssh class and ssh options somewhere.
             ssh_options = options
