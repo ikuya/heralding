@@ -117,9 +117,44 @@ capabilities:
         valid_days: 365
         serial_number: 0
 
-  ssh:
+  ssh_22:
     enabled: true
     port: 22
+    timeout: 30
+    protocol_specific_data:
+      banner: "SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.8"
+
+  ssh_222:
+    enabled: true
+    port: 222
+    timeout: 30
+    protocol_specific_data:
+      banner: "SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.8"
+
+  ssh_2222:
+    enabled: true
+    port: 2222
+    timeout: 30
+    protocol_specific_data:
+      banner: "SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.8"
+
+  ssh_22222:
+    enabled: true
+    port: 22222
+    timeout: 30
+    protocol_specific_data:
+      banner: "SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.8"
+
+  ssh_8022:
+    enabled: true
+    port: 8022
+    timeout: 30
+    protocol_specific_data:
+      banner: "SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.8"
+
+  ssh_10022:
+    enabled: true
+    port: 10022
     timeout: 30
     protocol_specific_data:
       banner: "SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.8"
